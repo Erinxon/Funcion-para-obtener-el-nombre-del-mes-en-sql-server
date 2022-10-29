@@ -5,7 +5,7 @@ create FUNCTION GetMonthName(@date datetime)
 RETURNS varchar(9) 
     AS 
     BEGIN
-		DECLARE @Month int = MONTH(@date)
+	DECLARE @Month int = MONTH(@date)
         DECLARE @MonthName varchar(100) = '';  
         set @MonthName = (case 
 		when @Month = 1 then 'Enero' 
