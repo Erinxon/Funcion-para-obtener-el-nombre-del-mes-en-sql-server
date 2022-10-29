@@ -2,11 +2,11 @@
 
 ```sql
 create FUNCTION GetMonthName(@date datetime)  
-RETURNS varchar(9) 
+RETURNS varchar(10) 
     AS 
     BEGIN
 	DECLARE @Month int = MONTH(@date)
-        DECLARE @MonthName varchar(9) = '';  
+        DECLARE @MonthName varchar(10) = '';  
         set @MonthName = (case 
 		when @Month = 1 then 'Enero' 
 		when @Month = 2 then 'Febrero' 
