@@ -1,4 +1,4 @@
-# Functión para obtener el nombre del mes en SQL SERVER
+# Función para obtener el nombre del mes en SQL SERVER
 
 
 create FUNCTION GetMonthName(@date datetime)  
