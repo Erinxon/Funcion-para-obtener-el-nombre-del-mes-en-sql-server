@@ -6,7 +6,7 @@ RETURNS varchar(9)
     AS 
     BEGIN
 	DECLARE @Month int = MONTH(@date)
-        DECLARE @MonthName varchar(100) = '';  
+        DECLARE @MonthName varchar(9) = '';  
         set @MonthName = (case 
 		when @Month = 1 then 'Enero' 
 		when @Month = 2 then 'Febrero' 
